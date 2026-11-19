@@ -13,4 +13,14 @@ def chatbot(question):
     return "Welcome to the Banking AI Assistant."
 
 
-print(chatbot("Where is my payment?"))
+if __name__ == "__main__":
+    examples = (
+        "Where is my payment?",
+        "What is my account balance?",
+        "Can I see my transactions?",
+        "Hello",
+    )
+
+    for question in examples:
+        print(f"Q: {question}")
+        print(f"A: {chatbot(question)}")
